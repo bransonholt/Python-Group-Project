@@ -167,30 +167,7 @@ def displayCSV():
         for row in readCSV:
             print(row)
 
-# #Define function that finds the last UID, so that the scrapping function can ennumerate from that last UID when scrapping new items
-# def lastUID():
-#     UIDS = []
-#     with open('AmazonItemsTest.csv') as csvfile:
-#         readCSV = csv.reader(csvfile, delimiter=',')
-        
-#         for row in readCSV:
-#             try:
-#                 if row[4] == 'UID':
-#                     pass
-#                 else:
-#                     UIDS.append(row[4])
-#             except:
-#                 continue
-                
-                
-#             try:
-#                 nextUID = max(UIDS)
-#             except:
-#                 print('exception')
-#                 nextUID = 0
-    
-# #     print("nextUID: " + str(nextUID))
-#     return nextUID
+
 
 
 
