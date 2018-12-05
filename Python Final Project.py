@@ -152,7 +152,7 @@ def fileNew(newItems):
 #Function for adding items to be tracked; similar to fileNew but items are appended to the end of the csv instead of
 #Overwriting the csv entirely
 def fileAdd(newItems):
-    with open('AmazonItemsTest.csv', 'a', newLine='') as itemsFile: #11/8/18 using 'AmazonItemsTest.csv' for testing purposes
+    with open('AmazonItemsTest.csv', 'a', newline='') as itemsFile: #11/8/18 using 'AmazonItemsTest.csv' for testing purposes
         fieldnames = ['Item', 'Price', 'Time', 'URL']
         theWriter = csv.DictWriter(itemsFile, fieldnames=fieldnames)
         
