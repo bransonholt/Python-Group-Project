@@ -168,7 +168,21 @@ def displayCSV():
             print(row)
 
 
+def uniqueItems():
+    unique_items = []
 
+    #to fill unique items list
+    with open("AmazonItemsTest.csv", "r") as csvFile:
+        readCSV = csv.reader(csvFile, delimiter=',')
+        for row in readCSV:
+            if row[0] not in unique_items:
+                unique_items.append(row[0])
+
+
+    #to correct the the unique items list 
+    unique_items.pop(0)
+    #print(unique_items)
+    return unique_items
 
 
 main()
